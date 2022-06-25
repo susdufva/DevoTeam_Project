@@ -35,7 +35,7 @@ function GetAllUsers() {
                             firstName={user.name.first} 
                             lastName={user.name.last} 
                             city={user.location.city} 
-                            image={user.picture.thumbnail} />
+                            image={user.picture.medium} />
                     )
                 })}
             </div>

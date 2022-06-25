@@ -1,0 +1,42 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(219, 219, 219);
+}
+
+.grid{
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+}
+.card{
+    background-color: white;
+    height: 45vh;
+    width: 160px;
+    z-index: 1;
+    margin: 30px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.color{
+    background-color: rgb(154, 164, 177);
+    height: 20vh;
+    z-index: -1;
+}
+
+.name{
+    padding: 10px;
+}
+.city{
+    padding-top: 20px;
+    font-size: 12px;
+}
+
+.picture{
+    border-radius: 50%;
+}
+
+svg{
+    height: 16px;
+    width: 16px;
+    padding: 5px;
+}
