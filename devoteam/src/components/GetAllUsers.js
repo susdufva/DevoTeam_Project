@@ -26,15 +26,16 @@ function GetAllUsers() {
 
   return (
     <>
+
+    <div className='grid'>
+            
         <Suspense
             fallback={ //fallback while waiting on the users to load
-            <div className=" ">
+            <div className="loading">
                 Loading...
             </div>
             }
-        >
-            <div className='grid'>
-            
+        >  
                 {users.map((user) =>{
                     return(
                         <UserCard 
@@ -46,16 +47,17 @@ function GetAllUsers() {
                     )
                 })}
 
-                    {names.map((name) =>{
+                {names.map((name) =>{
                     return(
                         <Sort 
                             key={name.id} 
-                            firstName={name.name.first} 
+                            name={name.name.first} 
                          />
                     )
                 })}
-            </div>
+         
         </Suspense>
+    </div>
     </>
   )
 }
