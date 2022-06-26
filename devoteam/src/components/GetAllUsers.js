@@ -1,10 +1,13 @@
 import React, {useState, useEffect, Suspense} from 'react';
 import axios from 'axios';
+import Sort from './Sort'
 const UserCard = React.lazy(() => import("./UserCard"));
+
 
 function GetAllUsers() {
 
     const [users, setUsers] = useState([]);
+    const [names, setNames] = useState([]);
 
     useEffect(()=>{
         const fecthUsers= async()=>{
@@ -12,11 +15,14 @@ function GetAllUsers() {
            console.log(response)
 
            setUsers(response.data.results)
+           setNames(response.data.results)
+
         }
 
         fecthUsers();
-
+        
     }, [])
+      
 
   return (
     <>
@@ -28,6 +34,8 @@ function GetAllUsers() {
             }
         >
             <div>Grid / List
+                
+
                 {users.map((user) =>{
                     return(
                         <UserCard 
@@ -36,6 +44,15 @@ function GetAllUsers() {
                             lastName={user.name.last} 
                             city={user.location.city} 
                             image={user.picture.medium} />
+                    )
+                })}
+
+                    {names.map((name) =>{
+                    return(
+                        <Sort 
+                            key={name.id} 
+                            firstName={name.name.first} 
+                         />
                     )
                 })}
             </div>

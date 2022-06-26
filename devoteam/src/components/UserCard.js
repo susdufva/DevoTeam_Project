@@ -3,12 +3,14 @@ import './Card.css';
 
 
 function UserCard( {firstName, lastName, city, image} ) {
+    
   return (
     <>
+
       <div className='grid'>
         <div className='card'>
           <div className='color'>
-          <h5 className="name">{firstName} {lastName} </h5>
+          <p className="name">{firstName} {lastName} </p>
           <img className="picture" src={image} alt="user" />
           <p className='city'>{city}</p>
           <div className='icons'>
