@@ -33,9 +33,8 @@ function GetAllUsers() {
             </div>
             }
         >
-            <div>Grid / List
-                
-
+            <div className='grid'>
+            
                 {users.map((user) =>{
                     return(
                         <UserCard 
