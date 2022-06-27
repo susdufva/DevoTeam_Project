@@ -1,6 +1,38 @@
-# Getting Started with Create React App
+# Getting Started with React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+´bash´
+run: npm i
+´´
+npm start
+´bash´
+
+## About
+
+I chose to write my assignement in React.js with custom css.
+
+My app fetches users from an API, displays all the users and the users are serachable. 
+
+My app containes following requirements:
+
+● Recreate the Figma design.
+● Add search by name functionality.
+● Handle empty or error states.
+● Responsive design.
+● No UI frameworks used (ex. Bootstrap, Material, Tailwind).
+
+## Evaluation 
+
+I started my focus on the functionality requested which turned out to be trickier than I thought. After off course fetching the API and displaying the result I started with the asceding/descending sorting which I had planed to do with classic javascript sort() function but I didn't get it to work.
+
+The serach bar is working.
+
+The css was also a bit tricky and took some extra time. I had planned to use a toggle class to swith between grid and list view. I would have had continued with that if I had put in extra time.
+
+The design is responsive but in a simple way.
+
+I have not written any unit tests, testing-library/jest and eslint are built in with React and more npm testing packages can easily be downloaded to the package.json
+
+I had great fun with this assignment, thank you!
 
 ## Available Scripts
 
@@ -39,32 +71,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
