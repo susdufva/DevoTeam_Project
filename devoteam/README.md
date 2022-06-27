@@ -22,7 +22,7 @@ My app containes following requirements:
 
 ## Evaluation 
 
-I started my focus on the functionality requested which turned out to be trickier than I thought. After off course fetching the API and displaying the result I started with the asceding/descending sorting which I had planed to do with classic javascript sort() function but I didn't get it to work.
+I started my focus on the functionality requested which turned out to be trickier than I thought. After off course fetching the API and displaying the result I started with the asceding/descending sorting which I had planed to do with classic javascript sort() function but I didn't get it to work. The data probably needs to be handled and sorted using state and onChange. 
 
 The serach bar is working.
 
